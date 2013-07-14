@@ -7,6 +7,7 @@ import java.net.Socket;
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import second.MathLib;
 
 /**
  * Created with IntelliJ IDEA. User: Berwyn Codeweaver Date: 10/07/13 Time:
@@ -41,14 +42,14 @@ public class Server {
 						.getAsJsonObject();
 				switch (map.get("method").getAsString()) {
 					case "subtract":
-						outputLine = String.valueOf(MathLib.subtract(
-								map.get("arg_1").getAsInt(), map.get("arg_2")
-										.getAsInt()));
+						outputLine = String.valueOf(second.MathLib.subtract(
+                                map.get("arg_1").getAsInt(), map.get("arg_2")
+                                .getAsInt()));
 						break;
 					case "add":
 						outputLine = String.valueOf(MathLib.add(map
-								.get("arg_1").getAsInt(), map.get("arg_2")
-								.getAsInt()));
+                                .get("arg_1").getAsInt(), map.get("arg_2")
+                                .getAsInt()));
 						break;
 					default:
 						outputLine = "invalid operation";

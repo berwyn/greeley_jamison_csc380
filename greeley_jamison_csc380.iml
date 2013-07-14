@@ -6,6 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/first_distributed_system/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/reflection_activity/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/second_distributed_system/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
