@@ -1,0 +1,14 @@
+To use this client, you need:
+
+- Ruby 1.9.3 or Ruby 2.0.0
+- Bundler
+
+To get the required gems,
+
+gem install nokogiri
+
+To view commands, use
+
+ruby app.rb
+
+with no arguments

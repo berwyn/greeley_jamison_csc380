@@ -10,7 +10,7 @@ import edu.neumont.csc380.ReflectionActivity;
 public class Main {
 
 	public static void main(String[] args) throws Exception {
-		Class<?> clazz = Class.forName("edu.neumont.csc380.ReflectionActivity");
+		Class<?> clazz = Class.forName("edu.edu.neumont.csc380.ReflectionActivity");
 
 		for (Constructor<?> con : clazz.getConstructors()) {
 			String output = "Found constructor ";
