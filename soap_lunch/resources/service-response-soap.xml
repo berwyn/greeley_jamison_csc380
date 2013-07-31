@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<soap:Envelope
+        xmlns:soap="http://www.w3.org/2001/12/soap-envelope"
+        soap:encodingStyle="http://www.w3.org/2001/12/soap-encoding">
+
+    <soap:Body xmlns:serviceres="http://neumont.edu/jgreeley/service/response">
+        <serviceres:getRestaurants>
+            <serviceres:restaurant>
+                <serviceres:id>0</serviceres:id>
+                <serviceres:name>Burrito Stand</serviceres:name>
+                <serviceres:description>A burrito stand</serviceres:description>
+                <serviceres:type>Mexican</serviceres:type>
+                <serviceres:meals>
+                    <serviceresmeal>
+                        <serviceres:id>0</serviceres:id>
+                        <serviceres:name>Burrito</serviceres:name>
+                        <serviceres:description>A delicious burrito</serviceres:description>
+                        <serviceres:cost>$2.50</serviceres:cost>
+                    </serviceresmeal>
+                </serviceres:meals>
+            </serviceres:restaurant>
+            <serviceres:restaurant>
+                <serviceres:id>1</serviceres:id>
+                <serviceres:name>Italian</serviceres:name>
+                <serviceres:description>An Italian joint</serviceres:description>
+                <serviceres:type>Italian</serviceres:type>
+                <serviceres:meals>
+                    <serviceres:meal>
+                        <serviceres:id>0</serviceres:id>
+                        <serviceres:name>Spaghetti</serviceres:name>
+                        <serviceres:description>A plate of spaghetti</serviceres:description>
+                        <serviceres:cost>$5.00</serviceres:cost>
+                    </serviceres:meal>
+                    <serviceres:meal>
+                        <serviceres:id>1</serviceres:id>
+                        <serviceres:name>Alfredo</serviceres:name>
+                        <serviceres:description>A plate of fettuccine alfredo</serviceres:description>
+                        <serviceres:cost>$4.50</serviceres:cost>
+                    </serviceres:meal>
+                </serviceres:meals>
+            </serviceres:restaurant>
+        </serviceres:getRestaurants>
+    </soap:Body>
+
+</soap:Envelope>

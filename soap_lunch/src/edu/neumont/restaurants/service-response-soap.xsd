@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://neumont.edu/jgreeley/service/response" xmlns:serviceres="http://neumont.edu/jgreeley/service/response" xmlns:soap="http://www.w3.org/2001/12/soap-envelope">
+    <xs:import namespace="http://www.w3.org/2001/12/soap-envelope" schemaLocation="soap.xsd"/>
+    <xs:element name="getRestaurants">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="serviceres:restaurant"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="restaurant">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="serviceres:id"/>
+                <xs:element ref="serviceres:name"/>
+                <xs:element ref="serviceres:description"/>
+                <xs:element ref="serviceres:type"/>
+                <xs:element ref="serviceres:meals"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="type" type="xs:NCName"/>
+    <xs:element name="meals">
+        <xs:complexType>
+            <xs:choice>
+                <xs:element name="serviceresmeal" form="unqualified">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element ref="serviceres:id"/>
+                            <xs:element ref="serviceres:name"/>
+                            <xs:element ref="serviceres:description"/>
+                            <xs:element ref="serviceres:cost"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element maxOccurs="unbounded" ref="serviceres:meal"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="meal">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="serviceres:id"/>
+                <xs:element ref="serviceres:name"/>
+                <xs:element ref="serviceres:description"/>
+                <xs:element ref="serviceres:cost"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="id" type="xs:integer"/>
+    <xs:element name="name" type="xs:string"/>
+    <xs:element name="description" type="xs:string"/>
+    <xs:element name="cost" type="xs:string"/>
+</xs:schema>

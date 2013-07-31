@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<soap:Envelope
+        xmlns:soap="http://www.w3.org/2001/12/soap-envelope"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+        soap:encodingStyle="http://www.w3.org/2001/12/soap-encoding">
+
+    <soap:Body xmlns:orderres="http://neumont.edu/jgreeley/order/response">
+        <orderres:postOrder>
+            <return xsi:type="xsd:string">Order placed!</return>
+        </orderres:postOrder>
+    </soap:Body>
+
+</soap:Envelope>

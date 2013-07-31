@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.w3.org/2001/XMLSchema-instance" xmlns:orderres="http://neumont.edu/jgreeley/order/response" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:soap="http://www.w3.org/2001/12/soap-envelope">
+    <xs:import namespace="http://neumont.edu/jgreeley/order/response" schemaLocation="orderres.xsd"/>
+    <xs:import namespace="http://www.w3.org/2001/12/soap-envelope" schemaLocation="order-response-soap.xsd"/>
+    <xs:attribute name="type" type="xs:NMTOKEN"/>
+</xs:schema>

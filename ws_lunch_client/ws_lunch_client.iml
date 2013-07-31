@@ -5,6 +5,7 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="jdk" jdkName="ruby-2.0.0-p195" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.3.5, ruby-2.0.0-p195) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coderay (v1.0.9, ruby-2.0.0-p195) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="method_source (v0.8.1, ruby-2.0.0-p195) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pry (v0.9.12.2, ruby-2.0.0-p195) [gem]" level="application" />

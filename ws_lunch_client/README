@@ -3,9 +3,11 @@ To use this client, you need:
 - Ruby 1.9.3 or Ruby 2.0.0
 - Bundler
 
+(I recommend RubyInstaller for windows, apt for Debian systems)
+
 To get the required gems,
 
-gem install nokogiri
+cd [project dir] && bundle install
 
 To view commands, use
 
