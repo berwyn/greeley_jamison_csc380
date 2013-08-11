@@ -52,7 +52,7 @@ public class GetRestaurants {
      * This is why there is not a <CODE>set</CODE> method for the restaurant property.
      * 
      * <p>
-     * For example, to add a new item, do as follows:
+     * For service, to add a new item, do as follows:
      * <pre>
      *    getRestaurant().add(newItem);
      * </pre>

@@ -96,7 +96,7 @@ public class Meals {
      * This is why there is not a <CODE>set</CODE> method for the meal property.
      * 
      * <p>
-     * For example, to add a new item, do as follows:
+     * For service, to add a new item, do as follows:
      * <pre>
      *    getMeal().add(newItem);
      * </pre>
