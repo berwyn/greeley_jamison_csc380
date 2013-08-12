@@ -17,7 +17,7 @@ import javax.xml.ws.Endpoint;
  * Time: 21:24
  * To change this template use File | Settings | File Templates.
  */
-@WebServlet("/services/lunch")
+@WebServlet("/services/*")
 public class LunchServlet extends CXFNonSpringServlet {
 
     @Override

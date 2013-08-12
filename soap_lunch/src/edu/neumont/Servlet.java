@@ -34,7 +34,7 @@ public class Servlet extends HttpServlet {
             } else if (action.equals("order")) {
                 context = JAXBContext.newInstance(PostOrder.class);
                 PostOrder order = (PostOrder) context.createUnmarshaller().unmarshal(req.getInputStream());
-                context = JAXBContext.newInstance()
+                context = JAXBContext.newInstance();
             } else {
                 resp.setStatus(422);
                 return;
