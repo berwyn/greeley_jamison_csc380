@@ -10,9 +10,10 @@ GEM
     httpi (2.1.0)
       rack
       rubyntlm (~> 0.3.2)
+    nokogiri (1.5.10)
     nokogiri (1.5.10-x86-mingw32)
     nori (2.3.0)
-    rack (1.5.2)
+    rack (2.2.3)
     rubyntlm (0.3.4)
     savon (2.3.0)
       akami (~> 1.2.0)
@@ -27,6 +28,7 @@ GEM
       nokogiri (>= 1.4.0, < 1.6)
 
 PLATFORMS
+  ruby
   x86-mingw32
 
 DEPENDENCIES
